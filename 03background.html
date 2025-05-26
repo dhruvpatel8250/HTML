@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background: red;
+        }
+        .div2{
+            height: 100px;
+            width: 100px;
+            /* background: linear-gradient(red,green,blue); */
+              /* background: linear-gradient(to left,red,green,blue); */
+               background: linear-gradient(to right,red,green,blue);
+        }
+        .div3{
+            height: 100px;
+            width: 100px;
+            background: radial-gradient(red,green,blue);
+        }
+        .div4{
+            background-image: url("https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg");
+            height: 100px;
+            width: 100px;
+            background-size: 100% 100%;
+            background-position: center;
+            
+        }
+        .div5{
+            height: 300px;
+            width: 300px;
+            background: url('https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4">
+        Hello
+    </div>
+    <div class="div5"></div>
+</body>
+</html>
