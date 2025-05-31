@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.CON1{
+    background: url(bottom1.jpg);
+    width: 420px;
+    height: 240px; 
+     background-size: 100% 100%;
+    position: relative;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -20px; */
+    transform: translate(-20px);
+    transition: 0.5s;
+   
+
+}
+
+p {
+    /* padding: 50px 0 0 250px; */
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+}
+
+p::first-letter {
+    color: red;
+}
+
+.BOX1 {
+    height: 200px;
+   width: 380px;
+   border: 5px solid white;
+    padding: 130px 0 0 220px;
+    color: white;
+    letter-spacing: 3px;
+    margin-left: -20px;
+    transition: 0.5s;
+    opacity: 0;  
+
+}
+.CON1:hover .BOX1 {
+    margin-left: 0;
+    opacity: 1;
+}
+.CON1:hover {
+    transform: translateX(0);
+}
+   </style>
+</head>
+<body>
+    <div class="CON1">
+        <p >FALL AHEAD</p>
+        <div class="BOX1">
+             NEW ARRIVALS
+        </div>
+    </div>   
+</body>
+</html>
