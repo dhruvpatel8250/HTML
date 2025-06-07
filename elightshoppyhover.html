@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            height: 250px;
+            width: 400px;
+            /* border: 1px solid red; */
+            background: url('https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg');
+            background-size: 100% 100%;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box1{
+            height: inherit;
+            width: inherit;
+            /* border: 1px solid red; */
+            background: rgba(0, 0, 0, 0.34);
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            transition: 2s;
+        }
+        .div:hover .box1{
+            top: 0;
+            right: 0;
+            
+        }
+        .div:hover .box2{
+left: 0;
+bottom: 0;
+        }
+
+        .box2{
+            height: inherit;
+            width: inherit;
+            /* border: 2px solid red; */
+             background: rgba(0, 0, 0, 0.34);
+            position: absolute;
+            bottom: -100%;
+            left: -100%;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
