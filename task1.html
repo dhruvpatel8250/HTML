@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightblue;
+            /* text-align: center; */
+            margin-left: 500px;
+            padding: 30px;
+            /* color: white; */
+        }
+
+        .img {
+            border: 2px solid black;
+            background-color: white;
+            text-align: center;
+        }
+
+       /* .phone{
+        width: 500px; */
+       
+        .email{
+            width: 530px ;
+        }
+
+        button{
+            background-color: lightsteelblue;
+            color: white;
+        }
+
+        h1{
+            color: white;
+        }
+
+        .name1{
+            width: 260px;
+        }
+
+        .name2{
+            width: 260px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <table cellspacing="15px">
+        <h1>Contact form</h1>
+        <from>
+            <tr>
+                <td>Your Name </td>
+                <td><input class="name1" type="text" placeholder="First Name"></td>
+                <td><input class="name2" type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Your Email</td>
+                <td colspan="3"><input class="email" type="text" placeholder="e.g.hello@Contact.net"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input class="Phone" type="text" placeholder="###"></td>
+                <td><input type="text" placeholder="###"></td>
+                <td><input type="text" placeholder="###"></td>
+            </tr>
+            <tr>
+                <td>Massage Subject</td>
+                <td>
+                    <select>
+                        <option>Other</option>
+                        <option>Maths</option>
+                        <option>science</option>
+                        <option>social Science</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Massage</td>
+                <td><textarea rows="4" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>Verification</td>
+                <td class="img"><input type="checkbox"> i'am not a robot <img
+                        src="recaptcha-logo-png_seeklogo-340088.png" alt="" width="30px"></td>
+            </tr>
+            <td>
+                <hr>
+            </td>
+            <tr>
+                <td><button>SUBMIT FORM</button></td>
+            </tr>
+        </from>
+    </table>
+</body>
+
+</html>
