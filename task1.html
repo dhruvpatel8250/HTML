@@ -5,189 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #0072ff;
+            background-color: lightblue;
+            /* text-align: center; */
+            margin-left: 500px;
+            padding: 30px;
+            /* color: white; */
         }
 
-        .login-wrapper {
-            max-width: 660px;
-            margin: auto;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 30px;
-            margin-top: 5%;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            top: 85px;
-            left: 10px;
-            position: relative;
-        }
-
-        .input-field {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            margin: 0.5rem 0 1rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        .forgot {
-            text-align: right;
-            display: block;
-            font-size: 10px;
-            color: #555;
-            text-decoration: none;
-
-        }
-
-        .btn-gradient {
-            /* width: 100%; */
-            padding: 0.85rem;
-            /* margin-left: 1000px; */
-            margin: 1rem 0;
-            border: none;
-            border-radius: 25px;
-            background: linear-gradient(to right, #00c6ff, #820b73, #0072ff, #ff3381);
-            color: #fff;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .btn-gradient:hover {
-            background: linear-gradient(to right, #0072ff, #00c6ff);
-        }
-
-        .main1 {
-            width: 1200px;
-            height: 600px;
-            background-color: #00f2fe;
-            position: absolute;
-            top: 50px;
-            left: 150px;
-            border-radius: 30px;
-        }
-
-        .lg {
-            width: 340px;
-            height: 80px;
-            padding: 10px;
-            /* border: 1px solid black; */
+        .img {
+            border: 2px solid black;
             background-color: white;
             text-align: center;
-            border-radius: 30px;
-            position: absolute;
-            top: 160px;
-            left: 442px;
         }
 
-        .rg {
-            width: 330px;
-            height: 80px;
-            padding: 10px;
-            /* border: 1px solid black; */
-            background-color: black;
+       /* .phone{
+        width: 500px; */
+       
+        .email{
+            width: 530px ;
+        }
+
+        button{
+            background-color: lightsteelblue;
             color: white;
-            text-align: center;
-            border-radius: 30px;
-            position: absolute;
-            top: 160px;
-            left: 772px;
         }
 
-        .ht {
-            width: 60px;
-            height: 30px;
-            padding: 10px;
-            /* border: 1px solid black; */
-            /* background-color: black; */
+        h1{
             color: white;
-            text-align: center;
-            border-radius: 30px;
-            position: absolute;
-            top: 25px;
-            left: 1230px;
         }
 
-        .cs {
-            width: 60px;
-            height: 30px;
-            padding: 10px;
-            /* border: 1px solid black; */
-            /* background-color: black; */
-            color: white;
-            text-align: center;
-            border-radius: 30px;
-            position: absolute;
-            top: 25px;
-            left: 1280px;
+        .name1{
+            width: 260px;
         }
 
-         .b {
-            width: 60px;
-            height: 70px;
-            padding: 10px;
-             border: 1px solid black; 
-             background-color: black; 
-            color: white;
-            text-align: center;
-            border-radius: 10px;
-            position: absolute;
-            top: 40px;
-            left: 1350px;
+        .name2{
+            width: 260px;
         }
 
-         .fa{
-            font-size: 50px;
-            color: rgb(249, 79, 11);
-        }
-
-         .fa2{
-            font-size: 50px;
-            color: rgb(40, 21, 216);
-        }
-
-         .fa3{
-            font-size: 50px;
-            color: rgb(245, 245, 248);
-        }
-
+        
     </style>
 </head>
 
 <body>
-    <h1>
-        <center>LOGIN FROM WITH NAV TABS</center>
-    </h1>
-    <div class="main1"></div>
-    <div class="lg">LOGIN</div>
-    <div class="rg">Register</div>
-    <div class="ht">HTML<br><i class="fa-brands fa-html5 fa"></i> </div>
-    <div class="cs">CSS<br><i class="fa-brands fa-css3-alt fa2"></i></div>
-    <div class="b"><i class="fa-solid fa-b fa3"></i></div>
-    <div class="login-wrapper">
-        <lable>Email addres</lable><br>
-        <input type="text" class="input-field" placeholder="name@example.com" style="margin-top: 20PX;"><br>
-        <label style="margin-top: 50PX;">We'll never share your Email with anyone else.</label><br><br>&nbsp;
-        <lable style="margin-top: 30PX;">Password</lable><br>
-        <input type="text" class="input-field" placeholder="Password"><br>
-        <lable style="margin-top: 20PX;">Password incorect</lable><br>
-        <button class="btn-gradient">Submit</button>
-
-    </div>
-    <!-- </div> -->
+    <table cellspacing="15px">
+        <h1>Contact form</h1>
+        <from>
+            <tr>
+                <td>Your Name </td>
+                <td><input class="name1" type="text" placeholder="First Name"></td>
+                <td><input class="name2" type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Your Email</td>
+                <td colspan="3"><input class="email" type="text" placeholder="e.g.hello@Contact.net"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input class="Phone" type="text" placeholder="###"></td>
+                <td><input type="text" placeholder="###"></td>
+                <td><input type="text" placeholder="###"></td>
+            </tr>
+            <tr>
+                <td>Massage Subject</td>
+                <td>
+                    <select>
+                        <option>Other</option>
+                        <option>Maths</option>
+                        <option>science</option>
+                        <option>social Science</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Massage</td>
+                <td><textarea rows="4" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>Verification</td>
+                <td class="img"><input type="checkbox"> i'am not a robot <img
+                        src="recaptcha-logo-png_seeklogo-340088.png" alt="" width="30px"></td>
+            </tr>
+            <td>
+                <hr>
+            </td>
+            <tr>
+                <td><button>SUBMIT FORM</button></td>
+            </tr>
+        </from>
+    </table>
 </body>
 
 </html>
