@@ -4,402 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Portfolio Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <title>foody</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- header section  -->
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Portfo<span>lio.</span></div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+        <div class="logo">
+            <span><i class="fa-solid fa-burger"></i>&nbsp;&nbsp;Burger</span>
+        </div>
+        <nav class="nav-link">
+            <a href="#" class="active">home</a>
+            <a href="#">Menu</a>
+            <a href="#">Offers</a>
+            <a href="#">Burgers</a>
+            <a href="#">Services</a>
+            <a href="#">Resturant</a>
+        </nav>
+        <div class="header-right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <button class="sign-in-btn">sign in</button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm dhruv patel</h1>
-            <p>A passionate Frontend Developer with expertise in creating responsive and user-friendly web applications
-                using modern technologies.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="cta-button">View My Work</a>
-                <a href="#contact" class="cta-button secondary">Contact Me</a>
+    <!-- main section  -->
+    <section class="main-section">
+        <!-- main-left sub section  -->
+        <div class="main-left">
+            <h1 class="main-heading">
+                Savor Every Bite <br>
+                With our <span style="color: #ff6b35">
+                    Handcrafted Burger </span>
+            </h1>
+            <p class="main-subheading">
+                Fresh Ingrdiant, Bold Flavors<br>
+                Crafted Just For You
+            </p>
+            <div class="main-button">
+                <button class="explore-btn">Expolre Menu</button>
+                <button class="play-video-btn">
+                    <i class="fa-solid fa-play"></i>Watch Video
+                </button>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="dhruvimg.jpg" alt="">
-                </div>
-                <div class="about-text">
-                    <h3>Frontend Developer & UI/UX Designer</h3>
-                    <p>Hello! I'm dhruv, a passionate web developer with 5+ years of experience creating modern,
-                        responsive websites and applications. I specialize in HTML, CSS, JavaScript, and React.js.</p>
-                    <p>My approach combines technical expertise with creative design to deliver engaging user
-                        experiences. I'm constantly learning and adapting to new technologies to stay at the forefront
-                        of web development.</p>
-
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-user-graduate"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>bachlour computer application</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <h4>Experience</h4>
-                                <p>Beginer</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>To-Wadaj Ahmedabad Gujrat</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>pateldhruvbhai6@gmail.com
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="#" class="cta-button">Download CV</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-            </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fab fa-html5"></i> Frontend Development</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML5 & CSS3</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>React.js</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Vue.js</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
+        <!-- main-right sub section  -->
+        <div class="main-right">
+            <img src="headerimg2-removebg-preview.png" alt="Burger" width="400px" class="burger-image">
+            <div class="discount-tag">20% off</div>
+            <div class="delivery-options">
+                <div class="delivery-option">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="delivery-text">
+                        <h3>Lightning Delivery</h3>
+                        Hot & Fresh in 30 mins
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> Design</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>UI/UX Design</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Responsive Design</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Figma</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Adobe XD</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Other Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Git & GitHub</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Node.js</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>MongoDB</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>SEO Optimization</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
+                <div class="delivery-option">
+                    <i class="fa-solid fa-box-open"></i>
+                    <div class="delivery-text">
+                        <h3>Dine-In Ready</h3>
+                        Enjoy at your Table
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
+    <!-- carousel section  -->
+    <section class="carousel-container">
+        <div class="carousel-inner">
+            <div class="carousel-item orange-bg">
+                <img src="img2.jpg" alt="Classic Burger" class="item-image">
+                <h3 class="item-title">Classic Burger</h3>
+                <p class="item-price">$8.99</p>
+                <button class="order-btn">Order now</button>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Project">
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Dashboard</h3>
-                        <p>A comprehensive admin dashboard for e-commerce platforms with analytics, inventory
-                            management, and customer insights.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Redux</span>
-                            <span class="project-tag">Chart.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
+             <div class="carousel-item green-bg">
+                <img src="img3.jpg" alt="Veggie Burger" class="item-image">
+                <h3 class="item-title">Veggie Burger</h3>
+                <p class="item-price">$7.49</p>
 
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Project">
-                    </div>
-                    <div class="project-content">
-                        <h3>Travel Booking App</h3>
-                        <p>A responsive travel booking application with destination search, booking management, and
-                            payment integration.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Stripe API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Project">
-                    </div>
-                    <div class="project-content">
-                        <h3>Fitness Tracker</h3>
-                        <p>A mobile-first fitness application with workout plans, progress tracking, and nutrition
-                            logging features.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React Native</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
+                <button class="order-btn">Order now</button>
             </div>
+             <div class="carousel-item purple-bg">
+                <img src="img4.jpg" alt="Double cheesBurger" class="item-image">
+                <h3 class="item-title"> cheesBurger</h3>
+                <p class="item-price">$9.99</p>
+                <button class="order-btn">Order now</button>
+            </div>
+             <div class="carousel-item blue-bg">
+                <img src="img5.jpg" alt="Bacon Burger" class="item-image">
+                <h3 class="item-title">Bacon Burger</h3>
+                <p class="item-price">$10.49</p>
+                <button class="order-btn">Order now</button>
+            </div>
+            <div class="carousel-item yellow-bg">
+                <img src="home img.jpg" alt="combo offer" class="item-image">
+                <h3 class="item-title">combo offer</h3>
+                <p class="item-price">$8.55</p>
+                <button class="order-btn">Order now</button>
+            </div>
+            
         </div>
+        
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out! I'm
-                        always open to new collaborations.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <p>8780377054</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>pateldhruvbhai6@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>To-Wadaj Ahmedabad Gujrat</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">Portfo<span>lio.</span></div>
-                <p>Creating beautiful, functional, and user-friendly web experiences</p>
-
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 John Doe. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html>
