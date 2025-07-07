@@ -1,25 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
 
+        body{
+            background-color: rgb(54, 52, 52);
+        }
+
+        .container{
+            position: relative;
+        }
+
+        .div1{
+            width: 580px;
+            height: 700px;
+            background-color: rgba(103, 31, 31, 0.49);
+           
+        }
+
+        .div2{
+           
+            position: absolute;
+            top: 160px;
+             left: 225px; 
+        }
+
+        .div3{
+            color: rgb(15, 14, 14);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            font-size: 20px;
+            border: 2px solid white;
+            background-color: rgb(110, 240, 240);
+            height: 40px;
+            width: 100%;
+            position: absolute;
+            top: 70px;
+        }
+
+        .fa{
+            background-color: orangered;
+            border-radius: 10px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .div4{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 80px;
+            right: 60px;
+        }
+
+        .div5{
+            position: absolute;
+            top: 0px;
+            left: 160px;
+        }
+
+        .div6{
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 730px;
+            left: 730px;
+        }
+
+        .container2{
+            position: relative;
+        }
+
+        .div7{
+            position: absolute;
+            top: 50px;
+            right: 0px;
+        }
+
+        .div8{
+            width: 86%;
+            height: 200px;
+            background-image: url(background2.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+             top: 100px;
+        }
+
+        
+        .div9{
+            width: 86%;
+            height: 200px;
+            background-image: url(background2.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+             top: 430px;
+             right: 0px;
+        }
+
+        .div10{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 120px;
+            left: 300px;
+        }
+
+         .div11{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 120px;
+            left: 700px;
+        }
+
+         .div12{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 120px;
+            right: 200px;
+        }
+
+         .div13{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 460px;
+            left: 300px;
+        }
+
+         .div14{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 460px;
+            left: 700px;
+        }
+
+         .div15{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 460px;
+            right: 200px;
+        }
+
+        .p1{
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 200px;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .div16{
+            position: absolute;
+            top: 330px;
+            left: 300px;
+        }
+
+        .div17{
+            position: absolute;
+            top: 330px;
+            left: 700px;
+        }
+
+        .div18{
+            position: absolute;
+            top: 330px;
+            right: 200px;
+        }
+
+        .div19{
+            position: absolute;
+            top: 678px;
+            left: 300px;
+        }
+
+          .div20{
+            position: absolute;
+            top: 678px;
+            left: 700px;
+        }
+
+        .div21{
+            position: absolute;
+            top: 678px;
+            right: 200px;
+        }
+
+        .container3{
+             position: relative;
+        }
+
+        .div22{
+            position: absolute;
+            top: 810px;
+            right: 150px;
+        }
+
+        .div23{
+            background-image: url(background1.jpg);
+            width: 70%;
+            height: 430px;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 890px;
+        }
+
+        .p2{
+            font-size: 60px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 400px;
+            position: absolute;
+            top: 90px;
+            right: 200px;
+        }
+
+        .p3{
+            font-size: 15px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 400px;
+            position: absolute;
+            top: 250px;
+            right: 200px;
+        }
+
+        .div24{
+            position: relative;
+        }
+
+        .div23{
+           
+        }
+
+        .container4{
+            position: relative;
+        }
+
+        .div25{
+            width: 800px;
+            height: 300px;
+            background-color: aqua;
+            position: absolute;
+            top: 1700px;
+            right: 0px;
+        }
+
+        .div26{
+                width: 900px;
+            height: 500px;
+            background-color: aqua;
+            position: absolute;
+            top: 1450px;
+            left: 0px;
+        }
+        
+    </style>
+</head>
 <body>
-    <div class="slider">
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <figure></figure>
-        <!-- <div class="content">
-            <h1>Awsome Background slider</h1>
-            <p>pure css slider with fade effect</p>
-        </div> -->
+    <div class="container">
+             <div class="div1"><img src="background1.jpg" alt="" width="100%" height="100%"></div>
+             <div class="div2"><img src="background2.jpg" alt="" width="1290px" height="500px"></div>
+             <div class="div3">
+                <div>home</div>
+                <div>Service</div>
+                <div>Our product</div>
+                <div>contact</div>
+             </div>
+             <div class="div4">
+                <div><i class="fa-brands fa-instagram fa"></i></div>
+                <div><i class="fa-brands fa-facebook fa"></i></div>
+                <div><i class="fa-brands fa-twitter fa"></i></div>
+                <div><i class="fa-brands fa-whatsapp fa"></i></div>
+             </div>
+             <div class="div5"><img src="logo.png" alt="" width="150px" height="250px"></div>
+             <div class="div6">Hot drinks</div>
+    </div>
+
+    <div class="container2">
+        <div class="div7"><img src="background1.jpg" alt="" width="350px" height="500px"></div>
+        <div class="div8"></div>
+          <div class="div9"></div>
+        <div class="div10"><img src="ip1.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div11"><img src="ip2.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div12"><img src="ip3.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div13"><img src="ip4.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div14"><img src="ip5.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div15"><img src="ip6.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div16">
+             <h1 class="p1">LOREM IPSUM 1</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div17">
+             <h1 class="p1">LOREM IPSUM 2</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div18">
+             <h1 class="p1">LOREM IPSUM 3</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div19">
+             <h1 class="p1">LOREM IPSUM 1</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div20">
+             <h1 class="p1">LOREM IPSUM 2</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div21">
+             <h1 class="p1">LOREM IPSUM 3</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="div22"><img src="background2.jpg" alt="" width="500px" height="600px"></div>
+        <div class="div23">
+            <div class="div24">
+               <h1 class="p2">SUMMER COFFEE</h1>
+               <h4 class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae officiis facere corrupti consequatur commodi voluptate iure eius minus, vitae, quas sint? Fugiat nemo quaerat debitis, repudiandae quia reiciendis odit.</h4>
+               </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="div25">
+            <img src="background2.jpg" alt="" width="100%" height="300px">
+        </div>
+        <div class="div26"><img src="Screenshot 2025-06-23 144159.png" alt="" width="100%" height="500px"></div>
+
     </div>
 </body>
-
 </html>
